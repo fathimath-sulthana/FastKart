@@ -2,35 +2,44 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Searchbar } from 'react-native-paper'
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
-const HomeSearchBar = () => {
+const SearchOffer = () => {
   return (
     <View style={styles.container}>
     <Searchbar
     placeholder='Search here...'
     style={styles.searchBar}
-    theme={themes}
+   
     iconColor='#0caf9a'
     
     />
-   
+   <Text style={styles.text}>Filter</Text>
     </View>
   )
 }
 
-export default HomeSearchBar
-const themes ={
-  color:'#0caf9a'
-}
+export default SearchOffer
+
 const styles = StyleSheet.create({
     container:{
-      padding:15,
-     
+      padding:10,
+     flexDirection:'row',
+     backgroundColor:"#fff"
     },
     searchBar:{
-      backgroundColor:'#fafafa'
+      backgroundColor:'#fff',
+      width:'86%',
+      borderWidth:1,
+      borderColor:"#edf9f9"
     },
     iconStyle:{
     alignSelf:'flex-end',
    
-    }
+    },
+    text:{
+        color:"#0caf9a",
+        alignSelf:'center',
+    padding:10,
+    fontSize:16,
+    fontWeight:'400'
+  }
 })
