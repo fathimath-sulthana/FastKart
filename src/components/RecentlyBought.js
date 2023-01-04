@@ -1,14 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import CategoryContainer from './CategoryContainer'
 
-const RecentlyContainer = () => {
+const RecentlyBought = () => {
   return (
     <View>
-      <Text>RecentlyContainer</Text>
+     <CategoryContainer/>
     </View>
   )
 }
 
-export default RecentlyContainer
+export default RecentlyBought
 
 const styles = StyleSheet.create({})
