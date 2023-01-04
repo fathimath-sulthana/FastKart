@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
     container:{
         flexDirection:'row',
         justifyContent:'space-between',
-        margin:15
+        margin:10,
+        //backgroundColor:'#ffffff'
     },
     profileImage:{
         height:50,
@@ -31,6 +32,6 @@ const styles = StyleSheet.create({
     locationText:{
         fontSize:18,
         fontWeight:'600',
-        color:'#444444 '
+        color:'black' 
     }
 })
